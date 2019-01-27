@@ -1,16 +1,35 @@
 ## Community Transit Application
 
-<img src="https://lh3.googleusercontent.com/aomHjXLr8v1IbhdlpgCYTCEMtsBH-qe0xkYvrNa5jm_j_Qcl6rXrdwTFGTu5NSc3Eg=s360-rw" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="150" />
+Community Transit Application is a Java application that provides the user with the Bus route stops schedule for a particular bus route number in a given schedule at Community Transit. The program uses Java regex API for extracting data.
 
-https://play.google.com/store/apps/details?id=com.dazzleHR
+## Sample Run
 
-DazzleHR allows Human Resources managers to keep up to date on all important employees information straight from their smartphone. Human Resources managers can also text work schedules to employees through Messaging.
+```
+Please enter a letter that your destinations start with: T
+Destination: Tulalip/Quil Ceda
+Bus Number: 209
+Bus Number: 222
++++++++++++++++++++++++++++
+Please enter a route ID as a string: 222
 
-## Built With
+The link for your route is: https://www.communitytransit.org/busservice/schedules/route/222
 
-* [React Native](https://facebook.github.io/react-native/) - one of the most popular hybrid app framework
-* [Redux](https://redux.js.org/) - used to manage data flow and application states of the app
-* [React Native Router Flux](https://github.com/viccalexander/Chameleon) - a library for resolving hybrid app navigation issue
-* [Firebase](https://firebase.google.com/) - used to store user data on the cloud
-
-## Getting Started
+Destination: To Tulalip
+Stop number: 1 is Grove & Alder
+Stop number: 2 is State & Grove St
+Stop number: 3 is 64th St NE & 83rd Ave NE
+Stop number: 4 is State Ave & 88th St NE
+Stop number: 5 is Quil Ceda Village
+Stop number: 6 is Marine Dr NE & 33rd Ave NE
+Stop number: 7 is Silver Village
++++++++++++++++++++++++++++
+Destination: To Marysville
+Stop number: 7 is Silver Village
+Stop number: 6 is Marine Dr NE & 33rd Ave NE
+Stop number: 5 is Quil Ceda Village
+Stop number: 4 is State Ave & 88th St NE
+Stop number: 3 is 64th St NE & 83rd Ave NE
+Stop number: 1 is Grove & Alder
+Stop number: 2 is State & Grove St
++++++++++++++++++++++++++++
+```
