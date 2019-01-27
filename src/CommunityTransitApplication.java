@@ -19,16 +19,12 @@ public class CommunityTransitApplication {
 
         URLConnection routeURLConnection = getConnection(url + "route/" + routeId);
         String routeURLText = readWebsiteContent(routeURLConnection);
+        System.out.println("\nThe link for your route is: " + url + "route/" + routeId + "\n");
         printDestinationAndStops(routeURLText);
     }
 
     private static URLConnection getConnection(String url) throws IOException {
         URLConnection connection = new URL(url).openConnection();
-        // It's because the site uses SSL.
-        // You just need to set user agent header for it to work:
-        // SSL (secure socket layer) is a method of ensuring security of data passed back and forth between a client and server.
-        // An SSL endpoint is a regular URL, but with https instead of http.
-        // Using SSL is more complicated than regular http because there needs to be handshaking between the client and server.
         connection.setRequestProperty("user-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11");
         return connection;
     }
